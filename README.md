@@ -1,2 +1,2 @@
 # KKER
-Official KKER page
+Official KKER site
