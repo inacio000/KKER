@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;900&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;500;600;700&family=Righteous&family=Roboto:wght@400;900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
@@ -83,7 +85,7 @@ main {
     display: flex;
     min-width: 300px;
     width: 1280px;
-    margin: 50px auto auto;
+    margin: 10px auto auto;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
@@ -143,14 +145,30 @@ section {
 }
 
 .home {
-    height: 30px;
+    min-width: 300px;
+    width: 1280px;
+    letter-spacing: 1.5px;
+    margin: 50px auto auto;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .home h1 {
     font-size: 2.5em;
     font-weight: bolder;
+}
+
+.home p {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.home .flags {
+    display: inline-block;
+}
+
+.home .flags img {
+    width: 50px;
 }
 
 /* About Us */
@@ -167,7 +185,18 @@ section {
 .container2 .title h1::after {
     content: "";
     height: 6px;
-    width: 200px;
+    width: 100px;
+    background-image: linear-gradient(to bottom, var(--color8), var(--color1));
+    border-radius: 6px;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.container2 .title .students::after {
+    content: "";
+    height: 6px;
+    width: 300px;
     background-image: linear-gradient(to bottom, var(--color8), var(--color1));
     border-radius: 6px;
     position: relative;
@@ -193,13 +222,30 @@ section {
     font-size: 26px;
     line-height: 1.5;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .content .article p {
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 22px;
     line-height: 1.5;
     color: white;
+} 
+
+.content .article li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px;
+    color: var(--text-color);
+    border-radius: 5px 0 0 5px;
+    margin-bottom: 2px;
+    background-image: linear-gradient(to right, var(--color1), transparent);
+    /* border: 1px solid white; */
+}
+
+.content .article li:hover {
+    transition: 0.2s ease-in-out;
 }
 
 .content .article a {
@@ -228,6 +274,7 @@ section {
 .image-section img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 /* Media Queries */
