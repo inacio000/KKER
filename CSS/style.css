@@ -247,6 +247,7 @@ button {
 .card h3 {
     color: #fff;
     text-shadow: 0 0 5px #000;
+    text-align: center;
 }
 
 .card1 {
