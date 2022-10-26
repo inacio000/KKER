@@ -67,18 +67,52 @@ ul li:hover {
     transform: scale(1.1);
 }
 
-select {
+.opc {
+    position: absolute;
+    top: 100px;
+    left: 80%;
+    transform: translateX(-50%);
     background: transparent;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 18px;
-    border: none;
+    height: 100px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 1;
+    /* pointer-events: none; */
+    transition: all 0.3s ease;
+    border: 1px solid #fff;
 }
 
-option {
-    background-color: darkgray;
+.nav-menu .opc {
+    transition: all 0.3s ease;
+}
+
+.nav-menu .opc:hover {
+    transition: translateY(-2px);
+}
+
+/* .opc a:nth-child(1):hover {
+    background-image: linear-gradient(to right, var(--color1), transparent);
     color: var(--text-color);
 }
+
+.opc a:nth-child(2):hover {
+    background-image: linear-gradient(to right, var(--color1), transparent);
+    color: var(--text-color);
+}
+
+.opc a:nth-child(3):hover {
+    background-image: linear-gradient(to right, var(--color1), transparent);
+    color: var(--text-color);
+}
+
+.opc a:nth-child(4):hover {
+    background-image: linear-gradient(to right, var(--color1), transparent);
+    color: var(--text-color);
+} */
 
 main {
     display: flex;
