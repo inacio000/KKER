@@ -73,7 +73,7 @@ li .navlink:hover::after {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    opacity: 1;
+    opacity: 0;
     /* pointer-events: none; */
     transition: all 0.3s ease;
     border: 1px solid #fff;
