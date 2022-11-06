@@ -1,8 +1,8 @@
 var lastScrollTop = 0;
 
-var menu = document.querySelector('nav ul');
-var menuBar = document.querySelector('nav .menu-icon');
-var iconMenu = document.querySelector('nav .menu-icon img');
+// var menu = document.querySelector('nav ul');
+// var menuBar = document.querySelector('nav .menu-icon');
+// var iconMenu = document.querySelector('nav .menu-icon img');
 
 navbar = document.getElementById("navbar");
 
@@ -16,11 +16,11 @@ window.addEventListener("scroll", function() {
     lastScrollTop = scrollTop;
 })
 
-menuBar.addEventListener('click', function() {
-    if (iconMenu.getAttribute("src") == 'imagens/menu.png') {
-        iconMenu.setAttribute("src", 'imagens/close.png');
-    } else {
-        iconMenu.setAttribute("src", 'imagens/menu.png');
-    }
-    menu.classList.toggle('active');
-})
+// menuBar.addEventListener('click', function() {
+//     if (iconMenu.getAttribute("src") == 'imagens/menu.png') {
+//         iconMenu.setAttribute("src", 'imagens/close.png');
+//     } else {
+//         iconMenu.setAttribute("src", 'imagens/menu.png');
+//     }
+//     menu.classList.toggle('active');
+// })
