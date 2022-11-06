@@ -396,19 +396,25 @@ main div:nth-child(3) {
 /* Footer */
 
 footer{
+    width: 100%;
     background-image: linear-gradient(to top, var(--color1), transparent);
-    padding: 70px 0;
+    padding: 80px 0;
 }
 
 .container-footer{
-    width: 100%;
+    width: 1280px;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .row{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
 }
 
 footer ul{
@@ -421,15 +427,14 @@ footer ul{
 
 
 .footer-col{
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    width: fit-content;
+    width: 200px;
     padding: 5px;
-    margin: 0 150px;
+    margin: 0 100px;
 }
 
 .footer-col h2{
@@ -442,15 +447,19 @@ footer ul{
      position: relative;
 }
 
-.footer-col h2::before{
-     content: '';
-     position: absolute;
-     left: 0;
-     bottom: -10px;
-     background-image: linear-gradient(to bottom, var(--color8), var(--color1));
-     height: 2px;
-     box-sizing: border-box;
-     width: 50px;
+.footer-col .title h2::after {
+    content: "";
+    height: 6px;
+    width: 70%;
+    background-image: linear-gradient(to bottom, var(--color8), var(--color1));
+    border-radius: 6px;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.footer-col ul {
+    text-align: center;
 }
 
 .footer-col ul li:not(:last-child){
@@ -459,8 +468,7 @@ footer ul{
 
 .footer-col ul li a{
      font-size: 20px;
-     text-transform: capitalize;
-     color: var(--text-color);
+     color: black;
      text-decoration: none;
      font-weight: 300;
      display: inline;
@@ -491,20 +499,20 @@ footer ul{
      background-color: #ffffff;
 }
 
-@media(max-widht: 767px){
-     .footer-col {
-          width: 50%;
-          margin-bottom: 30px;
-     }
-}
-
-@media(max-widht: 574px){
-     .footer-col {
-          width: 100%;
-     }
-}
-
 /* Media Queries */
+
+@media(max-width:1400px) {
+    footer {
+        width: 100%;
+    }
+    .container-footer {
+        width: 80%;
+        margin: auto;
+    }
+    .row {
+        width: fit-content;
+    }
+}
 
 @media(max-width:1250px) {
     body {
@@ -527,6 +535,14 @@ footer ul{
         width: fit-content;
         margin: auto;
     }
+    footer {
+        width: 100%;
+    }
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        justify-content: center;
+    }
  }
 
  @media(max-width:1100px) {
@@ -537,6 +553,21 @@ footer ul{
         display: flex;
         flex-direction: column;
     }
+    footer {
+        width: 100%;
+    }
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        justify-content: center;
+    }
+    /* footer .row{
+        width: fit-content;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+    } */
+    
  }
 
  @media (max-width:750px) {
@@ -584,6 +615,17 @@ footer ul{
     }
  }
 
+ @media(max-width:600px) {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        justify-content: center;
+    }
+    .footer-col {
+        margin: 0 0;
+    }
+ }
+
  @media(max-width:550px) {
     main {
         width: 70%;
@@ -600,28 +642,17 @@ footer ul{
     nav ul {
         transform: translateX(-100%);
     }
- }
-/* @media screen and (max-width: 900px) {
-    header {
-        width: 100%;
-        align-content: center;
-    }
-    .container {
-        width: 100%;
-        display: flex;
-        align-items: center;
+    .row {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
         justify-content: center;
     }
-    .content {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .article {
-        text-align: center;
-    }
-}
+ }
 
-@media(max-width: 1280px) {
-    .container {
-        width: 100%;
+ @media(max-width:400px) {
+    .row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
     }
-} */
+ }
