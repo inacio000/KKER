@@ -165,6 +165,11 @@ section .home .flags {
 
 section .home .flags img {
     width: 50px;
+    transition: transform 0.5s;
+}
+
+section .home .flags img:hover {
+    transform: translateY(-8px);
 }
 
 /* .opc a:nth-child(1):hover {
@@ -425,7 +430,6 @@ footer ul{
     list-style: none;
 }
 
-
 .footer-col{
     display: flex;
     flex-direction: column;
@@ -590,7 +594,7 @@ footer ul{
         width: 20%;
         height: 10%;
         top: 0%;
-        left: 0;
+        left: 0%;
         transform: translateX(-150%);
         display: flex;
         align-items: center;
