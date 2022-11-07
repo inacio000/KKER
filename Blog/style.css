@@ -213,6 +213,7 @@ transition: all 0.8s ease;
 
    body {
       width: 100%;
+      background-size: cover;
    }
 
    #blog {
