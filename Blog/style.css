@@ -200,7 +200,6 @@ transition: all 0.8s ease;
    color: #fff;
 }
 
-
 @media(max-width:1250px) {
 
    .blog-box{
@@ -232,6 +231,10 @@ transition: all 0.8s ease;
 }
 
 @media (max-width:750px) {
+
+   body {
+      background-size: cover;
+   }
 
    header nav ul {
       display: block;
@@ -298,6 +301,10 @@ transition: all 0.8s ease;
 }
 
 @media(max-width:375px) {
+
+   body {
+      background-size: cover;
+   }
 
    #navbar {
       width: fit-content;
